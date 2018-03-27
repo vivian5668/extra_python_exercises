@@ -1,4 +1,21 @@
 # Guessing Game
+import random
+
+num = random.randint(1,100)
+turn = 0
+
+def guess_game():
+  guess = -1
+  while guess != num:
+    guess = int(input('please guess a number here:'))
+    if guess > num:
+  	  print(f'num should be lower than {guess}, guess again')
+    elif guess < num:
+  	  print(f'num should be higher than {guess}, guess again')
+    else:
+  	  print('correct!')
+
+guess_game()
 
 # Create a program that asks the user to guess a number between 1 and 100.
 
@@ -36,3 +53,18 @@
 
 
 # *** your code here ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

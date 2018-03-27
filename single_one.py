@@ -8,3 +8,16 @@
 
 
 # *** your code here ***
+
+
+dd = {}
+
+def find_odd(my_list):
+	for i in range(len(my_list)):
+		dd[my_list[i]] = my_list.count(my_list[i])
+	print(dd)
+	for key in dd:
+	  if dd[key] == 1:
+	    print(key)
+	
+find_odd([1,1,2,2,3,3,4])

@@ -9,3 +9,16 @@
 
 
 # *** your code here ***
+
+def reverse(sentence):
+	new_sentence = sentence.split(' ')
+	result = []
+	for word in new_sentence:
+	  word = word[::-1]
+	 # print(word)
+	 # result += [word]
+	  result.append(word)
+	result = ' '.join(result)
+	print(result)
+
+reverse("Let's do a coding challenge")
